@@ -256,156 +256,401 @@
             </MeshRenderer>
         </GameObject>
     </GameObject>
-    <GameObject GUID="1516990725960772704 5396165024857194497 0"
+    <GameObject GUID="1517007240397695182 3481707198323621889 0"
                 Enabled="True"
                 Visible="True"
-                Name="Virus"
+                Name="Core"
                 DontDestroyOnLoad="False"
                >
-        <Transform GUID="1516990725960832373 3749765109518434305 0"
+        <Transform GUID="1517007240397784839 3915647879045185537 0"
                    Enabled="True"
-                   Position="(-1.95998, 0.86207, 4.61085)"
+                   Position="(0, 0, 0)"
                    Rotation="(0, 0, 0, 1)"
-                   Scale="(3.3596e-05, 3.3596e-05, 3.3596e-05)"
+                   Scale="(1, 1, 1)"
                   >
         </Transform>
-        <GameObject GUID="1516990725960865262 6846583039858835457 0"
+        <BehaviourContainer GUID="1517018981863701574 14097104661530017793 0"
+                            Enabled="True"
+                            SourceFilepath="/home/sephirot47/KeyVirus/Assets/Core.cpp"
+                           >
+        </BehaviourContainer>
+    </GameObject>
+    <GameObject GUID="1517045831550810488 4059262514452496385 0"
+                Enabled="True"
+                Visible="True"
+                Name="KeysLocation"
+                DontDestroyOnLoad="False"
+               >
+        <Transform GUID="1517045831550899088 7660674093447905281 0"
+                   Enabled="True"
+                   Position="(0, 0, 0)"
+                   Rotation="(0, 0, 0, 1)"
+                   Scale="(1, 1, 1)"
+                  >
+        </Transform>
+        <GameObject GUID="1517050339253853367 1695098659722493953 0"
                     Enabled="True"
                     Visible="True"
-                    Name="Body"
+                    Name="M"
                     DontDestroyOnLoad="False"
                    >
-            <Transform GUID="1516990725960895563 6662784827869102081 0"
+            <Transform GUID="1517050339253904814 16409063154417401857 0"
                        Enabled="True"
-                       Position="(-0.00195312, -26339.9, 0.0185547)"
+                       Position="(-0.679492, 0.435021, 7.97536)"
                        Rotation="(0, 0, 0, 1)"
                        Scale="(1, 1, 1)"
                       >
             </Transform>
-            <MeshRenderer GUID="1516990725960914433 11329085238115565569 0"
-                          Enabled="True"
-                          Visible="True"
-                          Material="1516990162192789270 3592398607304622081 2"
-                          LineWidth="1"
-                          RenderWireframe="False"
-                          Mesh="1516990162192789270 3592398607304622081 4"
-                         >
-            </MeshRenderer>
         </GameObject>
-        <GameObject GUID="1516990725961456008 173775407588311041 0"
+        <GameObject GUID="1517050336657391894 9840314608269656065 0"
                     Enabled="True"
                     Visible="True"
-                    Name="LeftEyeBall"
+                    Name="N"
                     DontDestroyOnLoad="False"
                    >
-            <Transform GUID="1516990725961488693 17951320626908102657 0"
+            <Transform GUID="1517050336657427764 8830728188238757889 0"
                        Enabled="True"
-                       Position="(0, -26384.3, 0.0107422)"
+                       Position="(-2.19084, 0.435021, 7.97536)"
                        Rotation="(0, 0, 0, 1)"
                        Scale="(1, 1, 1)"
                       >
             </Transform>
-            <MeshRenderer GUID="1516990725961508496 14558140882172772353 0"
-                          Enabled="True"
-                          Visible="True"
-                          Material="1516990162192789270 3592398607304622081 3"
-                          LineWidth="1"
-                          RenderWireframe="False"
-                          Mesh="1516990162192789270 3592398607304622081 5"
-                         >
-            </MeshRenderer>
         </GameObject>
-        <GameObject GUID="1516990725961958953 16640267359994511361 0"
+        <GameObject GUID="1517050327689828228 11351950681926795265 0"
                     Enabled="True"
                     Visible="True"
-                    Name="LeftEyeLittleBall"
+                    Name="B"
                     DontDestroyOnLoad="False"
                    >
-            <Transform GUID="1516990725961990790 14701553482318479361 0"
+            <Transform GUID="1517050327689874104 1609617677976862721 0"
                        Enabled="True"
-                       Position="(0, -25265.6, 0.00976562)"
+                       Position="(-3.54039, 0.435021, 7.97536)"
                        Rotation="(0, 0, 0, 1)"
                        Scale="(1, 1, 1)"
                       >
             </Transform>
-            <MeshRenderer GUID="1516990725962010174 9090222827998543873 0"
-                          Enabled="True"
-                          Visible="True"
-                          Material="1516995028623761356 14346445311407292417 0"
-                          LineWidth="1"
-                          RenderWireframe="False"
-                          Mesh="1516990162192789270 3592398607304622081 6"
-                         >
-            </MeshRenderer>
         </GameObject>
-        <GameObject GUID="1516990725962434441 14298836457924591617 0"
+        <GameObject GUID="1517050325443705950 17152535324933488641 0"
                     Enabled="True"
                     Visible="True"
-                    Name="RightEyeBall"
+                    Name="V"
                     DontDestroyOnLoad="False"
                    >
-            <Transform GUID="1516990725962465317 3092898721143193601 0"
+            <Transform GUID="1517050325443743725 588567474836865025 0"
                        Enabled="True"
-                       Position="(0, -25902.5, 0.00878906)"
+                       Position="(-5.01237, 0.435021, 7.97536)"
                        Rotation="(0, 0, 0, 1)"
                        Scale="(1, 1, 1)"
                       >
             </Transform>
-            <MeshRenderer GUID="1516990725962484316 13840286233072238593 0"
-                          Enabled="True"
-                          Visible="True"
-                          Material="1516990162192789270 3592398607304622081 3"
-                          LineWidth="1"
-                          RenderWireframe="False"
-                          Mesh="1516990162192789270 3592398607304622081 7"
-                         >
-            </MeshRenderer>
         </GameObject>
-        <GameObject GUID="1516990725962910586 5176047744778764289 0"
+        <GameObject GUID="1517050314857670120 13193425950265573377 0"
                     Enabled="True"
                     Visible="True"
-                    Name="RightEyeLittleBall"
+                    Name="C"
                     DontDestroyOnLoad="False"
                    >
-            <Transform GUID="1516990725962941490 15275266555064090625 0"
+            <Transform GUID="1517050314857713720 7648208380367994881 0"
                        Enabled="True"
-                       Position="(0, -25295, 0.0107422)"
+                       Position="(-6.60535, 0.435021, 7.97536)"
                        Rotation="(0, 0, 0, 1)"
                        Scale="(1, 1, 1)"
                       >
             </Transform>
-            <MeshRenderer GUID="1516990725962960270 467904938500947969 0"
-                          Enabled="True"
-                          Visible="True"
-                          Material="1516995028623761356 14346445311407292417 0"
-                          LineWidth="1"
-                          RenderWireframe="False"
-                          Mesh="1516990162192789270 3592398607304622081 8"
-                         >
-            </MeshRenderer>
         </GameObject>
-        <GameObject GUID="1516990725963379977 9461669191942668289 0"
+        <GameObject GUID="1517050312702799805 14104434006040772609 0"
                     Enabled="True"
                     Visible="True"
-                    Name="Teeth"
+                    Name="X"
                     DontDestroyOnLoad="False"
                    >
-            <Transform GUID="1516990725963410486 4828917080482906113 0"
+            <Transform GUID="1517050312702865078 17302410854427262977 0"
                        Enabled="True"
-                       Position="(0, -27149, 0.0078125)"
+                       Position="(-8.11529, 0.435021, 7.97536)"
                        Rotation="(0, 0, 0, 1)"
                        Scale="(1, 1, 1)"
                       >
             </Transform>
-            <MeshRenderer GUID="1516990725963429146 13944431974455181313 0"
-                          Enabled="True"
-                          Visible="True"
-                          Material="1516990162192789270 3592398607304622081 3"
-                          LineWidth="1"
-                          RenderWireframe="False"
-                          Mesh="1516990162192789270 3592398607304622081 9"
-                         >
-            </MeshRenderer>
+        </GameObject>
+        <GameObject GUID="1517050305277327889 6668673812147470337 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="Z"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517050305277360383 16872192845199441921 0"
+                       Enabled="True"
+                       Position="(-9.67177, 0.435021, 7.97536)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+        </GameObject>
+        <GameObject GUID="1517050302702871225 5391190834253135873 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="L"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517050302702912795 16814969862043467777 0"
+                       Enabled="True"
+                       Position="(0.0325575, 0.435021, 6.50521)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+        </GameObject>
+        <GameObject GUID="1517050300402084565 9253640492455821313 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="K"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517050300402117596 16272211340154634241 0"
+                       Enabled="True"
+                       Position="(-1.64149, 0.435021, 6.50521)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+        </GameObject>
+        <GameObject GUID="1517050296561601409 7589724257374961665 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="J"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517050296561633565 210173296916824065 0"
+                       Enabled="True"
+                       Position="(-3.06996, 0.435021, 6.50521)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+        </GameObject>
+        <GameObject GUID="1517050294615675140 8265493449654927361 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="H"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517050294615720566 96360279935287297 0"
+                       Enabled="True"
+                       Position="(-4.57791, 0.435021, 6.50521)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+        </GameObject>
+        <GameObject GUID="1517050291759941569 7164919693646495745 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="G"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517050291760023104 14276208508624961537 0"
+                       Enabled="True"
+                       Position="(-5.96558, 0.435021, 6.50521)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+        </GameObject>
+        <GameObject GUID="1517050289958830531 2235829132413894657 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="F"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517050289958864996 502220352806453249 0"
+                       Enabled="True"
+                       Position="(-7.59313, 0.435021, 6.50521)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+        </GameObject>
+        <GameObject GUID="1517050287182958030 5054619329874624513 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="D"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517050287182991732 16734981490634391553 0"
+                       Enabled="True"
+                       Position="(-9.06529, 0.435021, 6.50521)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+        </GameObject>
+        <GameObject GUID="1517050283152993593 16112787651685253121 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="S"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517050283153026241 14902889454527053825 0"
+                       Enabled="True"
+                       Position="(-10.6191, 0.435021, 6.50521)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+        </GameObject>
+        <GameObject GUID="1517050215339793521 11387827746341126145 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="A"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517050215339826640 6868367113984147457 0"
+                       Enabled="True"
+                       Position="(-12.0891, 0.435021, 6.50521)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+        </GameObject>
+        <GameObject GUID="1517050212337772297 6706485467270873089 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="P"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517050212337805804 18166657780184776705 0"
+                       Enabled="True"
+                       Position="(1.02699, 0.435021, 4.87134)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+        </GameObject>
+        <GameObject GUID="1517050208194942510 9686953626915831809 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="O"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517050208194974075 4743537253807030273 0"
+                       Enabled="True"
+                       Position="(-0.564193, 0.435021, 4.87134)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+        </GameObject>
+        <GameObject GUID="1517050205899588880 16516629476474355713 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="I"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517050205899636066 6605619569073586177 0"
+                       Enabled="True"
+                       Position="(-2.19692, 0.435021, 4.87134)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+        </GameObject>
+        <GameObject GUID="1517050204262386502 11507638229884993537 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="U"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517050204262436577 3520260474039959553 0"
+                       Enabled="True"
+                       Position="(-3.46299, 0.435021, 4.87134)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+        </GameObject>
+        <GameObject GUID="1517050199735928123 3441020045415677953 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="Y"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517050199735963560 13139914918364971009 0"
+                       Enabled="True"
+                       Position="(-4.81144, 0.435021, 4.87134)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+        </GameObject>
+        <GameObject GUID="1517050197643132536 3772759745945927681 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="T"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517050197643164512 9276844585848406017 0"
+                       Enabled="True"
+                       Position="(-6.6096, 0.435021, 4.87134)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+        </GameObject>
+        <GameObject GUID="1517050194824977585 17398393821485596673 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="R"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517050194825040395 17716300016470982657 0"
+                       Enabled="True"
+                       Position="(-8.12133, 0.435021, 4.87134)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+        </GameObject>
+        <GameObject GUID="1517045899664893263 8767892198222987265 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="E"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517045899664927885 16738143686075875329 0"
+                       Enabled="True"
+                       Position="(-9.71755, 0.435021, 4.87134)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+        </GameObject>
+        <GameObject GUID="1517045893935191403 6638911131895201793 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="W"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517045893935237562 3730284237375406081 0"
+                       Enabled="True"
+                       Position="(-11.266, 0.435021, 4.87134)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+        </GameObject>
+        <GameObject GUID="1517045863619380039 17926015366794838017 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="Q"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517045863619476926 10945539298463580161 0"
+                       Enabled="True"
+                       Position="(-12.7536, 0.435021, 4.87134)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
         </GameObject>
     </GameObject>
 </Scene>

@@ -6,11 +6,16 @@
            >
     <Transform GUID="1516990725960832373 3749765109518434305 0"
                Enabled="True"
-               Position="(-1.95998, 0.86207, 4.61085)"
+               Position="(-3.80004, 0.86207, 4.61085)"
                Rotation="(0, 0, 0, 1)"
                Scale="(3.3596e-05, 3.3596e-05, 3.3596e-05)"
               >
     </Transform>
+    <BehaviourContainer GUID="1517044438317759215 10090472195286368257 0"
+                        Enabled="True"
+                        SourceFilepath="/home/sephirot47/KeyVirus/Assets/Rotate.cpp"
+                       >
+    </BehaviourContainer>
     <GameObject GUID="1516990725960865262 6846583039858835457 0"
                 Enabled="True"
                 Visible="True"
@@ -19,7 +24,7 @@
                >
         <Transform GUID="1516990725960895563 6662784827869102081 0"
                    Enabled="True"
-                   Position="(-0.00195312, -26339.9, 0.0185547)"
+                   Position="(0.46875, -26339.9, -8820.68)"
                    Rotation="(0, 0, 0, 1)"
                    Scale="(1, 1, 1)"
                   >
@@ -42,7 +47,7 @@
                >
         <Transform GUID="1516990725961488693 17951320626908102657 0"
                    Enabled="True"
-                   Position="(0, -26384.3, 0.0107422)"
+                   Position="(0.0859375, -26384.3, -7890.93)"
                    Rotation="(0, 0, 0, 1)"
                    Scale="(1, 1, 1)"
                   >
@@ -65,7 +70,7 @@
                >
         <Transform GUID="1516990725961990790 14701553482318479361 0"
                    Enabled="True"
-                   Position="(0, -25265.6, 0.00976562)"
+                   Position="(0.257812, -25265.6, -7467.88)"
                    Rotation="(0, 0, 0, 1)"
                    Scale="(1, 1, 1)"
                   >
@@ -88,7 +93,7 @@
                >
         <Transform GUID="1516990725962465317 3092898721143193601 0"
                    Enabled="True"
-                   Position="(0, -25902.5, 0.00878906)"
+                   Position="(0.53125, -25937, -7602.66)"
                    Rotation="(0, 0, 0, 1)"
                    Scale="(1, 1, 1)"
                   >
@@ -111,7 +116,7 @@
                >
         <Transform GUID="1516990725962941490 15275266555064090625 0"
                    Enabled="True"
-                   Position="(0, -25295, 0.0107422)"
+                   Position="(0.539062, -25295, -7008.88)"
                    Rotation="(0, 0, 0, 1)"
                    Scale="(1, 1, 1)"
                   >
@@ -134,7 +139,7 @@
                >
         <Transform GUID="1516990725963410486 4828917080482906113 0"
                    Enabled="True"
-                   Position="(0, -27149, 0.0078125)"
+                   Position="(0.328125, -27149, -8644.8)"
                    Rotation="(0, 0, 0, 1)"
                    Scale="(1, 1, 1)"
                   >
