@@ -1,7 +1,5 @@
 #include "Core.h"
 
-#include "BangEditor/EditorPaths.h"
-
 void Core::OnStart()
 {
     Behaviour::OnStart();
@@ -34,11 +32,13 @@ void Core::OnStart()
     KeyCodesToKeyName.Add(Key::Z, "Z"); KeyNameToKeyCodes.Add("Z", Key::Z); 
 
     // This code is executed once when the Behaviour is started
-    m_virusPrefab = Resources::Load<Prefab>( PPATH("Virus.bprefab") );
+    m_virusPrefab = Resources::Load<Prefab>("Virus.bprefab");
 
     GameObject *keysLocation = GameObject::Find("KeysLocation");
     for (GameObject *keyLocation : keysLocation->GetChildren())
     {
+        if (Random::GetValue() > 0.2f) { continue; }
+
         GameObject *virus = m_virusPrefab.Get()->Instantiate();
         Vector3 keyPosition = keyLocation->GetTransform()->GetPosition();
         virus->GetTransform()->SetPosition( keyPosition );

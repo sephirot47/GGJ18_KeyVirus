@@ -653,4 +653,32 @@
             </Transform>
         </GameObject>
     </GameObject>
+    <GameObject GUID="1517051823496213937 17845974218827628545 0"
+                Enabled="True"
+                Visible="True"
+                Name="Splash"
+                DontDestroyOnLoad="False"
+               >
+        <Transform GUID="1517051823496294727 2553764189579509761 0"
+                   Enabled="True"
+                   Position="(0, 0.271029, 6.50517)"
+                   Rotation="(-0.707107, 0, 0, 0.707107)"
+                   Scale="(1, 1, 1)"
+                  >
+        </Transform>
+        <MeshRenderer GUID="1517051823496338009 9347814762886463489 0"
+                      Enabled="True"
+                      Visible="True"
+                      Material="1517051789315235281 6463993125567201281 0"
+                      LineWidth="1"
+                      RenderWireframe="False"
+                      Mesh="17132692438587015169 0 0"
+                     >
+        </MeshRenderer>
+        <BehaviourContainer GUID="1517052144220948981 8130699371403542529 0"
+                            Enabled="True"
+                            SourceFilepath="/home/sephirot47/KeyVirus/Assets/Splash.cpp"
+                           >
+        </BehaviourContainer>
+    </GameObject>
 </Scene>

@@ -13,7 +13,7 @@
     </Transform>
     <BehaviourContainer GUID="1517044438317759215 10090472195286368257 0"
                         Enabled="True"
-                        SourceFilepath="/home/sephirot47/KeyVirus/Assets/Rotate.cpp"
+                        SourceFilepath="/home/sephirot47/KeyVirus/Assets/Virus.cpp"
                        >
     </BehaviourContainer>
     <GameObject GUID="1516990725960865262 6846583039858835457 0"
