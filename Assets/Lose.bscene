@@ -244,11 +244,16 @@
                      AudioClip="1517128792688318025 1760042138650804225 0"
                      Volume="0.5"
                      Pitch="1"
-                     Range="inf"
+                     Range="1"
                      Looping="False"
                      PlayOnStart="True"
                     >
         </AudioSource>
+        <BehaviourContainer GUID="1517130396189064301 18294964190076469249 0"
+                            Enabled="True"
+                            SourceFilepath="/home/sephirot47/KeyVirus/Assets/Lose.cpp"
+                           >
+        </BehaviourContainer>
     </GameObject>
     <GameObject GUID="1517102343750891999 8997647247474688001 0"
                 Enabled="True"
@@ -283,11 +288,11 @@
                            Position="(0, 0, 0)"
                            Rotation="(0, 0, 0, 1)"
                            Scale="(1, 1, 1)"
-                           MarginLeftBot="(0, 0)"
-                           MarginRightTop="(0, -200)"
+                           MarginLeftBot="(0, 20)"
+                           MarginRightTop="(0, 0)"
                            PivotPosition="(0, 0)"
                            AnchorMin="(-1, -1)"
-                           AnchorMax="(1, -1)"
+                           AnchorMax="(1, 1)"
                           >
             </RectTransform>
             <UITextRenderer GUID="1517103147593230388 13979566868520763393 0"
@@ -296,7 +301,7 @@
                             Material="4875661717826174977 0 0"
                             LineWidth="1"
                             RenderWireframe="False"
-                            Font="1511514011158768612 4115801876253900801 0"
+                            Font="1517129998756953563 5463185206372466689 0"
                             Content="Press SPACE to replay"
                             TextSize="30"
                             SpacingMultiplier="(1, 1)"
@@ -304,7 +309,7 @@
                             AlphaThreshold="0.24"
                             Kerning="False"
                             Wrapping="False"
-                            VerticalAlign="1"
+                            VerticalAlign="2"
                             HorizontalAlign="1"
                            >
             </UITextRenderer>
@@ -320,10 +325,10 @@
                            Position="(0, 0, 0)"
                            Rotation="(0, 0, 0, 1)"
                            Scale="(1, 1, 1)"
-                           MarginLeftBot="(0, -250)"
-                           MarginRightTop="(0, 0)"
+                           MarginLeftBot="(0, 0)"
+                           MarginRightTop="(0, 30)"
                            PivotPosition="(0, 0)"
-                           AnchorMin="(-1, 1)"
+                           AnchorMin="(-1, -1)"
                            AnchorMax="(1, 1)"
                           >
             </RectTransform>
@@ -333,15 +338,15 @@
                             Material="4875661717826174977 0 0"
                             LineWidth="1"
                             RenderWireframe="False"
-                            Font="1511514011158768612 4115801876253900801 0"
-                            Content="You lasted 00:00"
-                            TextSize="70"
+                            Font="1517129998756953563 5463185206372466689 0"
+                            Content="You lasted   00:00"
+                            TextSize="60"
                             SpacingMultiplier="(1, 1)"
                             TextColor="(1, 1, 0, 1)"
                             AlphaThreshold="0.24"
                             Kerning="False"
                             Wrapping="False"
-                            VerticalAlign="1"
+                            VerticalAlign="0"
                             HorizontalAlign="1"
                            >
             </UITextRenderer>

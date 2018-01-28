@@ -73,7 +73,7 @@
                      AudioClip="1517128792687468694 5463185206372466689 0"
                      Volume="1"
                      Pitch="1"
-                     Range="inf"
+                     Range="0"
                      Looping="False"
                      PlayOnStart="True"
                     >
@@ -707,11 +707,11 @@
                            Position="(0, 0, 0)"
                            Rotation="(0, 0, 0, 1)"
                            Scale="(1, 1, 1)"
-                           MarginLeftBot="(0, -200)"
-                           MarginRightTop="(-200, 0)"
+                           MarginLeftBot="(20, 0)"
+                           MarginRightTop="(0, 20)"
                            PivotPosition="(0, 0)"
-                           AnchorMin="(-1, 1)"
-                           AnchorMax="(-1, 1)"
+                           AnchorMin="(-1, -1)"
+                           AnchorMax="(1, 1)"
                           >
             </RectTransform>
             <UITextRenderer GUID="1517126961981494921 5582758195404734465 0"
@@ -720,7 +720,7 @@
                             Material="4875661717826174977 0 0"
                             LineWidth="1"
                             RenderWireframe="False"
-                            Font="1511514011158768612 4115801876253900801 0"
+                            Font="1517129998756953563 5463185206372466689 0"
                             Content="00:00"
                             TextSize="30"
                             SpacingMultiplier="(1, 1)"
@@ -728,8 +728,8 @@
                             AlphaThreshold="0.24"
                             Kerning="False"
                             Wrapping="False"
-                            VerticalAlign="1"
-                            HorizontalAlign="1"
+                            VerticalAlign="0"
+                            HorizontalAlign="0"
                            >
             </UITextRenderer>
         </GameObject>

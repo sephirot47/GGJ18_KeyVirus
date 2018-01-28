@@ -1,0 +1,350 @@
+<Scene GUID="1517101980103114236 7092346978410954753 0"
+       Enabled="True"
+       Visible="True"
+       Name="Menu"
+       DontDestroyOnLoad="False"
+      >
+    <Transform GUID="1517101980109461406 1950170376520597505 0"
+               Enabled="True"
+               Position="(0, 0, 0)"
+               Rotation="(0, 0, 0, 1)"
+               Scale="(1, 1, 1)"
+              >
+    </Transform>
+    <GameObject GUID="1517102633229325754 9005708866729541633 0"
+                Enabled="True"
+                Visible="True"
+                Name="Virus_1"
+                DontDestroyOnLoad="False"
+               >
+        <Transform GUID="1517102633232269592 4350829083760787457 0"
+                   Enabled="True"
+                   Position="(-5.50983, 4.89956, 2.68101)"
+                   Rotation="(0, 0.707107, 0, 0.707107)"
+                   Scale="(0.000151724, 0.000151724, 0.000151724)"
+                  >
+        </Transform>
+        <GameObject GUID="1517102633229384458 7090051198132158465 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="Body"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517102633229419247 12345848720296771585 0"
+                       Enabled="True"
+                       Position="(0.46875, -26339.9, -8820.68)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+            <MeshRenderer GUID="1517102633229443091 16155902801145233409 0"
+                          Enabled="True"
+                          Visible="True"
+                          Material="1517102806033657335 5463185206372466689 0"
+                          LineWidth="1"
+                          RenderWireframe="False"
+                          Mesh="1516990162192789270 3592398607304622081 4"
+                         >
+            </MeshRenderer>
+        </GameObject>
+        <GameObject GUID="1517102633229902456 1390066646386737153 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="LeftEyeBall"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517102633229956168 1434938540549996545 0"
+                       Enabled="True"
+                       Position="(0.0859375, -26384.3, -7890.93)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+            <MeshRenderer GUID="1517102633229980886 16463229495248158721 0"
+                          Enabled="True"
+                          Visible="True"
+                          Material="1516990162192789270 3592398607304622081 3"
+                          LineWidth="1"
+                          RenderWireframe="False"
+                          Mesh="1516990162192789270 3592398607304622081 5"
+                         >
+            </MeshRenderer>
+        </GameObject>
+        <GameObject GUID="1517102633230386141 16280349925223432193 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="LeftEyeLittleBall"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517102633230421360 12227620433985273857 0"
+                       Enabled="True"
+                       Position="(0.257812, -25265.6, -7467.88)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+            <MeshRenderer GUID="1517102633230444570 3551340918978117633 0"
+                          Enabled="True"
+                          Visible="True"
+                          Material="1516995028623761356 14346445311407292417 0"
+                          LineWidth="1"
+                          RenderWireframe="False"
+                          Mesh="1516990162192789270 3592398607304622081 6"
+                         >
+            </MeshRenderer>
+        </GameObject>
+        <GameObject GUID="1517102633230875136 10490451435727093761 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="RightEyeBall"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517102633230911790 12707053683183976449 0"
+                       Enabled="True"
+                       Position="(0.53125, -25937, -7602.66)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+            <MeshRenderer GUID="1517102633230948239 4783722204778987521 0"
+                          Enabled="True"
+                          Visible="True"
+                          Material="1516990162192789270 3592398607304622081 3"
+                          LineWidth="1"
+                          RenderWireframe="False"
+                          Mesh="1516990162192789270 3592398607304622081 7"
+                         >
+            </MeshRenderer>
+        </GameObject>
+        <GameObject GUID="1517102633231352318 4028019066915520513 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="RightEyeLittleBall"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517102633231386996 12671435004002172929 0"
+                       Enabled="True"
+                       Position="(0.539062, -25295, -7008.88)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+            <MeshRenderer GUID="1517102633231410447 1754896973988626433 0"
+                          Enabled="True"
+                          Visible="True"
+                          Material="1516995028623761356 14346445311407292417 0"
+                          LineWidth="1"
+                          RenderWireframe="False"
+                          Mesh="1516990162192789270 3592398607304622081 8"
+                         >
+            </MeshRenderer>
+        </GameObject>
+        <GameObject GUID="1517102633231813946 8023804850951159809 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="Teeth"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517102633231848003 1799734920730378241 0"
+                       Enabled="True"
+                       Position="(0.328125, -27149, -8644.8)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+            <MeshRenderer GUID="1517102633231870575 6298385233947394049 0"
+                          Enabled="True"
+                          Visible="True"
+                          Material="1516990162192789270 3592398607304622081 3"
+                          LineWidth="1"
+                          RenderWireframe="False"
+                          Mesh="1516990162192789270 3592398607304622081 9"
+                         >
+            </MeshRenderer>
+        </GameObject>
+    </GameObject>
+    <GameObject GUID="1517101980158715157 2044944430544191489 0"
+                Enabled="True"
+                Visible="True"
+                Name="Wall1"
+                DontDestroyOnLoad="False"
+               >
+        <Transform GUID="1517101980158751071 18356887585441185793 0"
+                   Enabled="True"
+                   Position="(-6.81883, 3, 2.06405)"
+                   Rotation="(0, 0, 0, 1)"
+                   Scale="(0.2, 20.5404, 41.1181)"
+                  >
+        </Transform>
+        <MeshRenderer GUID="1517101980158773270 1912548799469846529 0"
+                      Enabled="True"
+                      Visible="True"
+                      Material="1517097890080439368 7454843317704982529 0"
+                      LineWidth="1"
+                      RenderWireframe="False"
+                      Mesh="4107117383661912065 0 0"
+                     >
+        </MeshRenderer>
+        <GameObject GUID="1517102068946650950 8960749286513967105 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="GameObject"
+                    DontDestroyOnLoad="False"
+                   >
+            <Transform GUID="1517102068946723142 8048590042064486401 0"
+                       Enabled="True"
+                       Position="(62.549, 0.173298, 0.343398)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                      >
+            </Transform>
+            <PointLight GUID="1517102068946760333 716174732772245505 0"
+                        Enabled="True"
+                        Intensity="1"
+                        Color="(1, 1, 1, 1)"
+                        Range="500"
+                       >
+            </PointLight>
+        </GameObject>
+    </GameObject>
+    <GameObject GUID="1517101980160186526 16996924742789234689 0"
+                Enabled="True"
+                Visible="True"
+                Name="Camera"
+                DontDestroyOnLoad="False"
+               >
+        <Transform GUID="1517101980160221576 11321559081023438849 0"
+                   Enabled="True"
+                   Position="(4.08491, 5.55566, 2.45094)"
+                   Rotation="(0, 0.707107, 0, 0.707107)"
+                   Scale="(1, 1, 1)"
+                  >
+        </Transform>
+        <Camera GUID="1517101980160266887 17481405849871056897 0"
+                Enabled="True"
+                ClearColor="(0.7, 0.9, 1, 1)"
+                ZNear="0.1"
+                ZFar="100"
+                ProjectionMode="1"
+                OrthoHeight="25"
+                FOVDegrees="60"
+               >
+        </Camera>
+        <BehaviourContainer GUID="1517104179223742474 1997668316767846401 0"
+                            Enabled="True"
+                            SourceFilepath="/home/sephirot47/KeyVirus/Assets/Menu.cpp"
+                           >
+        </BehaviourContainer>
+        <AudioListener GUID="1517129085787391100 16740841887610437633 0"
+                       Enabled="True"
+                      >
+        </AudioListener>
+        <AudioSource GUID="1517129087961344769 12536263243506647041 0"
+                     Enabled="True"
+                     AudioClip="1517128792688318025 1760042138650804225 0"
+                     Volume="0.5"
+                     Pitch="1"
+                     Range="inf"
+                     Looping="False"
+                     PlayOnStart="True"
+                    >
+        </AudioSource>
+    </GameObject>
+    <GameObject GUID="1517102343750891999 8997647247474688001 0"
+                Enabled="True"
+                Visible="True"
+                Name="Canvas"
+                DontDestroyOnLoad="False"
+               >
+        <RectTransform GUID="1517102343750960961 8714656593985142785 0"
+                       Enabled="True"
+                       Position="(0, 0, 0)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                       MarginLeftBot="(0, 0)"
+                       MarginRightTop="(0, 0)"
+                       PivotPosition="(0, 0)"
+                       AnchorMin="(-1, -1)"
+                       AnchorMax="(1, 1)"
+                      >
+        </RectTransform>
+        <UICanvas GUID="1517102343751000196 15766687779540434945 0"
+                  Enabled="True"
+                 >
+        </UICanvas>
+        <GameObject GUID="1517103147592990692 11945290037228208129 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="Text_1"
+                    DontDestroyOnLoad="False"
+                   >
+            <RectTransform GUID="1517103147593159556 772464161836761089 0"
+                           Enabled="True"
+                           Position="(0, 0, 0)"
+                           Rotation="(0, 0, 0, 1)"
+                           Scale="(1, 1, 1)"
+                           MarginLeftBot="(0, 0)"
+                           MarginRightTop="(0, -200)"
+                           PivotPosition="(0, 0)"
+                           AnchorMin="(-1, -1)"
+                           AnchorMax="(1, -1)"
+                          >
+            </RectTransform>
+            <UITextRenderer GUID="1517103147593230388 13979566868520763393 0"
+                            Enabled="True"
+                            Visible="True"
+                            Material="4875661717826174977 0 0"
+                            LineWidth="1"
+                            RenderWireframe="False"
+                            Font="1511514011158768612 4115801876253900801 0"
+                            Content="Press SPACE to replay"
+                            TextSize="30"
+                            SpacingMultiplier="(1, 1)"
+                            TextColor="(1, 1, 1, 1)"
+                            AlphaThreshold="0.24"
+                            Kerning="False"
+                            Wrapping="False"
+                            VerticalAlign="1"
+                            HorizontalAlign="1"
+                           >
+            </UITextRenderer>
+        </GameObject>
+        <GameObject GUID="1517102343738377877 744449017877889025 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="Text"
+                    DontDestroyOnLoad="False"
+                   >
+            <RectTransform GUID="1517102343738467767 12549067056412098561 0"
+                           Enabled="True"
+                           Position="(0, 0, 0)"
+                           Rotation="(0, 0, 0, 1)"
+                           Scale="(1, 1, 1)"
+                           MarginLeftBot="(0, -250)"
+                           MarginRightTop="(0, 0)"
+                           PivotPosition="(0, 0)"
+                           AnchorMin="(-1, 1)"
+                           AnchorMax="(1, 1)"
+                          >
+            </RectTransform>
+            <UITextRenderer GUID="1517102343738514668 3967457416701804545 0"
+                            Enabled="True"
+                            Visible="True"
+                            Material="4875661717826174977 0 0"
+                            LineWidth="1"
+                            RenderWireframe="False"
+                            Font="1511514011158768612 4115801876253900801 0"
+                            Content="You lasted 00:00"
+                            TextSize="70"
+                            SpacingMultiplier="(1, 1)"
+                            TextColor="(1, 1, 0, 1)"
+                            AlphaThreshold="0.24"
+                            Kerning="False"
+                            Wrapping="False"
+                            VerticalAlign="1"
+                            HorizontalAlign="1"
+                           >
+            </UITextRenderer>
+        </GameObject>
+    </GameObject>
+</Scene>

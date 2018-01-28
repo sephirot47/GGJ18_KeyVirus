@@ -9,6 +9,7 @@ class Virus : public Behaviour
 public:
     Color color;
     int virusType = 0;
+    bool zombie = false;
     float scaleFactor = 1.0f;
 
     Virus() = default;

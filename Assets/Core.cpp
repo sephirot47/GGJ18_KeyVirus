@@ -1,5 +1,6 @@
 #include "Core.h"
 
+#include "Lose.h"
 #include "Virus.h"
 
 void Core::OnStart()
@@ -53,12 +54,38 @@ void Core::OnUpdate()
 
     m_timeSinceLastAppear += Time::GetDeltaTime();
 
-    if (m_keyToVirus.Size() == KeyNameToKeyCodes.Size())
+    if (m_keyToVirus.Size() >= 3) // KeyNameToKeyCodes.Size())
     {
+        Lose::s_lastedTime = m_time;
         m_lostTime += Time::GetDeltaTime();
-        if (m_lostTime >= 4)
+        if (m_lostTime >= MaxLostTime)
         {
             SceneManager::LoadScene( PPATH("Lose.bscene") );
+        }
+        else
+        {
+            for (const auto &pair : m_keyToVirus)
+            {
+                GameObject *virusGO = pair.second;
+                Virus *virus = virusGO->GetComponent<Virus>();
+                virus->zombie = true;
+
+                GameObject *camGo = Camera::GetActive()->GetGameObject();
+                Vector3 camFwd = camGo->GetTransform()->GetForward();
+                Quaternion nowQuat = virusGO->GetTransform()->GetRotation();
+                Quaternion destQuat = Quaternion::LookDirection(camFwd);
+                virusGO->GetTransform()->SetRotation(
+                    Quaternion::SLerp(nowQuat, destQuat, Time::GetDeltaTime() * 0.8f));
+
+                if (m_lostTime >= LostRotTime)
+                {
+                    Vector3 moveVector = (camGo->GetTransform()->GetPosition() -
+                                          virusGO->GetTransform()->GetPosition());
+                    virusGO->GetTransform()->SetPosition(
+                       virusGO->GetTransform()->GetPosition() +
+                        moveVector * float((m_lostTime - LostRotTime) / MaxLostTime));
+                }
+            }
         }
         return;
     }
@@ -104,8 +131,8 @@ void Core::OnUpdate()
         virus->scaleFactor = isVirusColorOn ? 1.4f : 1.0f;
     }
 
-    const Array<Key>& keysDown = Input::GetKeysDown();
-    for (Key k : keysDown)
+    const Array<Key>& keys = Input::GetPressedKeys();
+    for (Key k : keys)
     { 
         if (!KeyCodesToKeyName.ContainsKey(k)) { continue; }
         

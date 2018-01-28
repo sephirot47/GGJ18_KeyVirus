@@ -1,0 +1,12 @@
+<Material GUID="1517097890080439368 7454843317704982529 0"
+          RenderPass="0"
+          DiffuseColor="(1, 1, 1, 1)"
+          Shininess="60"
+          ReceivesLighting="True"
+          UvMultiply="(3, 3)"
+          UvOffset="(0, 0)"
+          Texture="1517098169803609154 5463185206372466689 0"
+          VertexShader="1510299163478730097 0 0"
+          FragmentShader="1510299163478634161 0 0"
+         >
+</Material>
