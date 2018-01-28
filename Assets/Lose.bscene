@@ -24,6 +24,21 @@
                    Scale="(0.000151724, 0.000151724, 0.000151724)"
                   >
         </Transform>
+        <BehaviourContainer GUID="1517134359957352372 17774790736533782529 0"
+                            Enabled="True"
+                            SourceFilepath="/home/sephirot47/KeyVirus/Assets/Float.cpp"
+                           >
+        </BehaviourContainer>
+        <AudioSource GUID="1517135237129869708 5408134308437164033 0"
+                     Enabled="True"
+                     AudioClip="1517128792688318025 1760042138650804225 0"
+                     Volume="0.5"
+                     Pitch="1"
+                     Range="999999"
+                     Looping="False"
+                     PlayOnStart="True"
+                    >
+        </AudioSource>
         <GameObject GUID="1517102633229384458 7090051198132158465 0"
                     Enabled="True"
                     Visible="True"
@@ -240,7 +255,7 @@
                       >
         </AudioListener>
         <AudioSource GUID="1517129087961344769 12536263243506647041 0"
-                     Enabled="True"
+                     Enabled="False"
                      AudioClip="1517128792688318025 1760042138650804225 0"
                      Volume="0.5"
                      Pitch="1"

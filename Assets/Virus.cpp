@@ -28,12 +28,15 @@ void Virus::OnUpdate()
 {
     Behaviour::OnUpdate();
 
+    if (originalPosition == Vector3::Zero)
+    { originalPosition = GetGameObject()->GetTransform()->GetPosition(); }
+
     if (!zombie)
     {
         Quaternion rot = Quaternion::AngleAxis(Time::GetDeltaTime() * 3.0f, Vector3::Up);
         GetGameObject()->GetTransform()->RotateLocal(rot);
-        GetGameObject()->GetTransform()->SetLocalScale(originalLocalScale * scaleFactor);
     }
+    GetGameObject()->GetTransform()->SetLocalScale(originalLocalScale * scaleFactor);
 }
 
 void Virus::OnDestroy()

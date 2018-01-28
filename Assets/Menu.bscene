@@ -24,6 +24,11 @@
                    Scale="(6.76442e-05, 6.76442e-05, 6.76442e-05)"
                   >
         </Transform>
+        <BehaviourContainer GUID="1517134042186957002 6748047006800805889 0"
+                            Enabled="True"
+                            SourceFilepath="/home/sephirot47/KeyVirus/Assets/Float.cpp"
+                           >
+        </BehaviourContainer>
         <GameObject GUID="1517102633229384458 7090051198132158465 0"
                     Enabled="True"
                     Visible="True"
@@ -176,6 +181,11 @@
                    Scale="(9.16793e-05, 9.16793e-05, 9.16793e-05)"
                   >
         </Transform>
+        <BehaviourContainer GUID="1517134038266537311 15343848592846618625 0"
+                            Enabled="True"
+                            SourceFilepath="/home/sephirot47/KeyVirus/Assets/Float.cpp"
+                           >
+        </BehaviourContainer>
         <GameObject GUID="1517102278380332818 6177565948485042177 0"
                     Enabled="True"
                     Visible="True"
@@ -415,6 +425,11 @@
                    Scale="(9.33568e-05, 9.33568e-05, 9.33568e-05)"
                   >
         </Transform>
+        <BehaviourContainer GUID="1517133110291796374 10433349398850174977 0"
+                            Enabled="True"
+                            SourceFilepath="/home/sephirot47/KeyVirus/Assets/Float.cpp"
+                           >
+        </BehaviourContainer>
         <GameObject GUID="1516990725960865262 6846583039858835457 0"
                     Enabled="True"
                     Visible="True"

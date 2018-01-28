@@ -11,6 +11,7 @@ public:
     int virusType = 0;
     bool zombie = false;
     float scaleFactor = 1.0f;
+    Vector3 originalPosition = Vector3::Zero;
 
     Virus() = default;
     virtual ~Virus() = default;

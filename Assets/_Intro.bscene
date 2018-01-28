@@ -1,0 +1,47 @@
+<Scene GUID="1517101980103114236 7092346978410954753 0"
+       Enabled="True"
+       Visible="True"
+       Name="_Intro"
+       DontDestroyOnLoad="False"
+      >
+    <Transform GUID="1517101980109461406 1950170376520597505 0"
+               Enabled="True"
+               Position="(0, 0, 0)"
+               Rotation="(0, 0, 0, 1)"
+               Scale="(1, 1, 1)"
+              >
+    </Transform>
+    <GameObject GUID="1517101980160186526 16996924742789234689 0"
+                Enabled="True"
+                Visible="True"
+                Name="Camera"
+                DontDestroyOnLoad="False"
+               >
+        <Transform GUID="1517101980160221576 11321559081023438849 0"
+                   Enabled="True"
+                   Position="(4.08491, 5.55566, 2.45094)"
+                   Rotation="(0, 0.707107, 0, 0.707107)"
+                   Scale="(1, 1, 1)"
+                  >
+        </Transform>
+        <Camera GUID="1517101980160266887 17481405849871056897 0"
+                Enabled="True"
+                ClearColor="(0.1, 0.1, 0.1, 1)"
+                ZNear="0.1"
+                ZFar="100"
+                ProjectionMode="1"
+                OrthoHeight="25"
+                FOVDegrees="60"
+               >
+        </Camera>
+        <AudioListener GUID="1517128813224900531 8942498493004513281 0"
+                       Enabled="True"
+                      >
+        </AudioListener>
+        <BehaviourContainer GUID="1517136571398693147 8995629643637719041 0"
+                            Enabled="True"
+                            SourceFilepath="/home/sephirot47/KeyVirus/Assets/Intro.cpp"
+                           >
+        </BehaviourContainer>
+    </GameObject>
+</Scene>

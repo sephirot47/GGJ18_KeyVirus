@@ -69,21 +69,23 @@ void Core::OnUpdate()
                 GameObject *virusGO = pair.second;
                 Virus *virus = virusGO->GetComponent<Virus>();
                 virus->zombie = true;
+                virus->scaleFactor = 1.0f;
 
                 GameObject *camGo = Camera::GetActive()->GetGameObject();
                 Vector3 camFwd = camGo->GetTransform()->GetForward();
                 Quaternion nowQuat = virusGO->GetTransform()->GetRotation();
                 Quaternion destQuat = Quaternion::LookDirection(camFwd);
                 virusGO->GetTransform()->SetRotation(
-                    Quaternion::SLerp(nowQuat, destQuat, Time::GetDeltaTime() * 0.8f));
+                    Quaternion::SLerp(nowQuat, destQuat, Time::GetDeltaTime() * 1.2f));
 
                 if (m_lostTime >= LostRotTime)
                 {
                     Vector3 moveVector = (camGo->GetTransform()->GetPosition() -
-                                          virusGO->GetTransform()->GetPosition());
+                                          virus->originalPosition);
                     virusGO->GetTransform()->SetPosition(
-                       virusGO->GetTransform()->GetPosition() +
-                        moveVector * float((m_lostTime - LostRotTime) / MaxLostTime));
+                        virus->originalPosition +
+                        moveVector * float((m_lostTime - LostRotTime) /
+                                           (MaxLostTime - LostRotTime + 0.2f)));
                 }
             }
         }
