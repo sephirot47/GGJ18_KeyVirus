@@ -105,7 +105,7 @@ void Core::OnUpdate()
 
     if (m_timeSinceLastAppear >= m_appearPeriod)
     {
-        m_appearPeriod *= 0.95;
+        m_appearPeriod = Math::Max(float(m_appearPeriod) * 0.95f, 0.3f);
         m_timeSinceLastAppear = 0.0;
 
         int i = 0;
