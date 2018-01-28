@@ -27,7 +27,7 @@
         <MeshRenderer GUID="1516990272585228655 7686522512305291265 0"
                       Enabled="True"
                       Visible="True"
-                      Material="12542352338901270529 0 0"
+                      Material="1517097890080439368 7454843317704982529 0"
                       LineWidth="1"
                       RenderWireframe="False"
                       Mesh="4107117383661912065 0 0"
@@ -42,8 +42,8 @@
                >
         <Transform GUID="1516990272587776153 12467005006073036801 0"
                    Enabled="True"
-                   Position="(-0.639536, 13.7216, 13.843)"
-                   Rotation="(-0.508746, 0, 0, 0.860917)"
+                   Position="(-0.00250208, 15.6478, 13.3341)"
+                   Rotation="(-0.557075, 0, 0, 0.830462)"
                    Scale="(1, 1, 1)"
                   >
         </Transform>
@@ -57,6 +57,13 @@
                 FOVDegrees="60"
                >
         </Camera>
+        <PostProcessEffect GUID="1517096098053734957 10267939969079181313 0"
+                           Enabled="False"
+                           PostProcessShader="/home/sephirot47/Bang/res/EngineAssets/Shaders/Blur.frag"
+                           Priority="0"
+                           Type="0"
+                          >
+        </PostProcessEffect>
     </GameObject>
     <GameObject GUID="1516990760592204342 8116610779161034753 0"
                 Enabled="True"
@@ -122,7 +129,7 @@
         <Transform GUID="1516998202073637117 7364505243343650817 0"
                    Enabled="True"
                    Position="(-0.465744, -1.05927, 0.982444)"
-                   Rotation="(0.0179245, 0, 0, 0.999839)"
+                   Rotation="(0, 0, 0, 1)"
                    Scale="(0.168251, 0.102593, 0.145527)"
                   >
         </Transform>
@@ -134,18 +141,18 @@
                    >
             <Transform GUID="1516998202074417782 8395850448732422145 0"
                        Enabled="True"
-                       Position="(0, 0, 0)"
+                       Position="(1.48898, 4.67261, 30.1906)"
                        Rotation="(0, 0, 0, 1)"
-                       Scale="(1, 1, 1)"
+                       Scale="(184.327, 1, 72.5823)"
                       >
             </Transform>
             <MeshRenderer GUID="1516998202074447448 5422032685168066561 0"
                           Enabled="True"
                           Visible="True"
-                          Material="0 0 0"
+                          Material="12542352338901270529 0 0"
                           LineWidth="1"
                           RenderWireframe="False"
-                          Mesh="0 0 0"
+                          Mesh="4107117383661912065 0 0"
                          >
             </MeshRenderer>
         </GameObject>
@@ -296,7 +303,7 @@
                    >
             <Transform GUID="1517050339253904814 16409063154417401857 0"
                        Enabled="True"
-                       Position="(-0.679492, 0.435021, 7.97536)"
+                       Position="(-0.651691, 0.435021, 8.10432)"
                        Rotation="(0, 0, 0, 1)"
                        Scale="(1, 1, 1)"
                       >
@@ -548,7 +555,7 @@
                    >
             <Transform GUID="1517050205899636066 6605619569073586177 0"
                        Enabled="True"
-                       Position="(-2.19692, 0.435021, 4.87134)"
+                       Position="(-1.91499, 0.435021, 4.87134)"
                        Rotation="(0, 0, 0, 1)"
                        Scale="(1, 1, 1)"
                       >
@@ -652,33 +659,5 @@
                       >
             </Transform>
         </GameObject>
-    </GameObject>
-    <GameObject GUID="1517051823496213937 17845974218827628545 0"
-                Enabled="True"
-                Visible="True"
-                Name="Splash"
-                DontDestroyOnLoad="False"
-               >
-        <Transform GUID="1517051823496294727 2553764189579509761 0"
-                   Enabled="True"
-                   Position="(0, 0.271029, 6.50517)"
-                   Rotation="(-0.707107, 0, 0, 0.707107)"
-                   Scale="(1, 1, 1)"
-                  >
-        </Transform>
-        <MeshRenderer GUID="1517051823496338009 9347814762886463489 0"
-                      Enabled="True"
-                      Visible="True"
-                      Material="1517051789315235281 6463993125567201281 0"
-                      LineWidth="1"
-                      RenderWireframe="False"
-                      Mesh="17132692438587015169 0 0"
-                     >
-        </MeshRenderer>
-        <BehaviourContainer GUID="1517052144220948981 8130699371403542529 0"
-                            Enabled="True"
-                            SourceFilepath="/home/sephirot47/KeyVirus/Assets/Splash.cpp"
-                           >
-        </BehaviourContainer>
     </GameObject>
 </Scene>

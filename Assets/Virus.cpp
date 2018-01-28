@@ -6,11 +6,13 @@ void Virus::OnStart()
 {
     Behaviour::OnStart();
 
-    isShiftVirus = Random::GetValue() > 0.5f;
+    virusType = Random::GetRange(0, 3);
 
-    Color color = isShiftVirus ? Color::White : Color::Green;
+    if (virusType == 0) { color = Color(1.0f, 0.55f, 0.6f);   }
+    if (virusType == 1) { color = Color::Green; }
+    if (virusType == 2) { color = Color(0.5f, 0.8f, 1.0f);  }
 
-    List<MeshRenderer*> mrs = GetGameObject()->GetComponents<MeshRenderer>();
+    List<MeshRenderer*> mrs = GetGameObject()->GetComponentsInChildren<MeshRenderer>();
     for (MeshRenderer *mr : mrs)
     {
         mr->GetMaterial()->SetDiffuseColor( color );
@@ -33,7 +35,10 @@ void Virus::OnDestroy()
     Splash *splash = splashGO->GetComponent<Splash>();
     if (splash)
     { 
-        splash->isShiftVirus = isShiftVirus;
+        splashGO->SetVisible(false);
+        splashGO->GetTransform()->SetPosition(
+                    GetGameObject()->GetTransform()->GetPosition() );
+        splash->color = color;
     }
 }
 

@@ -31,13 +31,23 @@ void Core::OnStart()
     KeyCodesToKeyName.Add(Key::Y, "Y"); KeyNameToKeyCodes.Add("Y", Key::Y); 
     KeyCodesToKeyName.Add(Key::Z, "Z"); KeyNameToKeyCodes.Add("Z", Key::Z); 
 
-    // This code is executed once when the Behaviour is started
     m_virusPrefab = Resources::Load<Prefab>("Virus.bprefab");
+}
 
-    GameObject *keysLocation = GameObject::Find("KeysLocation");
-    for (GameObject *keyLocation : keysLocation->GetChildren())
+void Core::OnUpdate()
+{
+    Behaviour::OnUpdate();
+
+    m_timeSinceLastAppear += Time::GetDeltaTime();
+
+    if (m_timeSinceLastAppear >= m_appearPeriod)
     {
-        if (Random::GetValue() > 0.2f) { continue; }
+        m_appearPeriod *= 0.95;
+        m_timeSinceLastAppear = 0.0;
+
+        GameObject *keysLocation = GameObject::Find("KeysLocation");
+        int keyLocationIndex = Random::GetRange(0, int(keysLocation->GetChildren().Size()));
+        GameObject *keyLocation = keysLocation->GetChild(keyLocationIndex);
 
         GameObject *virus = m_virusPrefab.Get()->Instantiate();
         Vector3 keyPosition = keyLocation->GetTransform()->GetPosition();
@@ -45,13 +55,7 @@ void Core::OnStart()
         virus->SetParent( SceneManager::GetActiveScene() );
         m_keyToVirus.Add(keyLocation->GetName(), virus);
     }
-}
 
-void Core::OnUpdate()
-{
-    Behaviour::OnUpdate();
-
-    // This code is executed every frame
     const Array<Key>& keysDown = Input::GetKeysDown();
     for (Key k : keysDown)
     { 

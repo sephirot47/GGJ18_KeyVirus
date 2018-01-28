@@ -15,7 +15,8 @@ public:
     void OnDestroy() override;
 
 private:
-    bool isShiftVirus = false;
+    Color color;
+    int virusType = 0;
 };
 
 BANG_BEHAVIOUR_CLASS(Virus);

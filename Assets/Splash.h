@@ -7,7 +7,7 @@ class Splash : public Behaviour
     COMPONENT(Splash);
 
 public:
-    bool isShiftVirus = false;
+    Color color;
 
     Splash() = default;
     virtual ~Splash() = default;
@@ -16,7 +16,6 @@ public:
     void OnUpdate() override;
 
 private:
-    Color m_originalColor;
     double m_originalSize;
     double m_elapsedTime = 0.0;
 };
