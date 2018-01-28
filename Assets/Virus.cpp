@@ -10,12 +10,12 @@ void Virus::OnStart()
 
     if (virusType == 0) { color = Color(1.0f, 0.55f, 0.6f);   }
     if (virusType == 1) { color = Color::Green; }
-    if (virusType == 2) { color = Color(0.5f, 0.8f, 1.0f);  }
+    if (virusType == 2) { color = Color(0.5f, 0.6f, 1.0f);  }
 
     List<MeshRenderer*> mrs = GetGameObject()->GetComponentsInChildren<MeshRenderer>();
     for (MeshRenderer *mr : mrs)
     {
-        if (mr->GetMaterial()->GetTexture() != nullptr)
+        if (mr->GetMaterial()->GetTexture() != nullptr) // Only change body color
         {
             mr->GetMaterial()->SetDiffuseColor( color );
         }
