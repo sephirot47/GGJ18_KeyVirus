@@ -54,7 +54,7 @@ void Core::OnUpdate()
 
     m_timeSinceLastAppear += Time::GetDeltaTime();
 
-    if (m_keyToVirus.Size() >= 3) // KeyNameToKeyCodes.Size())
+    if (m_keyToVirus.Size() >= KeyNameToKeyCodes.Size())
     {
         Lose::s_lastedTime = m_time;
         m_lostTime += Time::GetDeltaTime();
@@ -133,7 +133,10 @@ void Core::OnUpdate()
         virus->scaleFactor = isVirusColorOn ? 1.4f : 1.0f;
     }
 
-    const Array<Key>& keys = Input::GetPressedKeys();
+    Array<Key> keys = Input::GetPressedKeys();
+    keys.PushBack( Input::GetKeysDown() );
+    keys.PushBack( Input::GetKeysUp() );
+
     for (Key k : keys)
     { 
         if (!KeyCodesToKeyName.ContainsKey(k)) { continue; }

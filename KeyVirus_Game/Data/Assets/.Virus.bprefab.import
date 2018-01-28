@@ -1,0 +1,157 @@
+<GameObject GUID="1516990725960772704 5396165024857194497 0"
+            Enabled="True"
+            Visible="True"
+            Name="Virus"
+            DontDestroyOnLoad="False"
+           >
+    <Transform GUID="1516990725960832373 3749765109518434305 0"
+               Enabled="True"
+               Position="(-3.80004, 0.86207, 4.61085)"
+               Rotation="(0, 0, 0, 1)"
+               Scale="(3.3596e-05, 3.3596e-05, 3.3596e-05)"
+              >
+    </Transform>
+    <BehaviourContainer GUID="1517044438317759215 10090472195286368257 0"
+                        Enabled="True"
+                        SourceFilepath="/home/sephirot47/KeyVirus/Assets/Virus.cpp"
+                       >
+    </BehaviourContainer>
+    <GameObject GUID="1516990725960865262 6846583039858835457 0"
+                Enabled="True"
+                Visible="True"
+                Name="Body"
+                DontDestroyOnLoad="False"
+               >
+        <Transform GUID="1516990725960895563 6662784827869102081 0"
+                   Enabled="True"
+                   Position="(0.46875, -26339.9, -8820.68)"
+                   Rotation="(0, 0, 0, 1)"
+                   Scale="(1, 1, 1)"
+                  >
+        </Transform>
+        <MeshRenderer GUID="1516990725960914433 11329085238115565569 0"
+                      Enabled="True"
+                      Visible="True"
+                      Material="1516990162192789270 3592398607304622081 2"
+                      LineWidth="1"
+                      RenderWireframe="False"
+                      Mesh="1516990162192789270 3592398607304622081 4"
+                     >
+        </MeshRenderer>
+    </GameObject>
+    <GameObject GUID="1516990725961456008 173775407588311041 0"
+                Enabled="True"
+                Visible="True"
+                Name="LeftEyeBall"
+                DontDestroyOnLoad="False"
+               >
+        <Transform GUID="1516990725961488693 17951320626908102657 0"
+                   Enabled="True"
+                   Position="(0.0859375, -26384.3, -7890.93)"
+                   Rotation="(0, 0, 0, 1)"
+                   Scale="(1, 1, 1)"
+                  >
+        </Transform>
+        <MeshRenderer GUID="1516990725961508496 14558140882172772353 0"
+                      Enabled="True"
+                      Visible="True"
+                      Material="1516990162192789270 3592398607304622081 3"
+                      LineWidth="1"
+                      RenderWireframe="False"
+                      Mesh="1516990162192789270 3592398607304622081 5"
+                     >
+        </MeshRenderer>
+    </GameObject>
+    <GameObject GUID="1516990725961958953 16640267359994511361 0"
+                Enabled="True"
+                Visible="True"
+                Name="LeftEyeLittleBall"
+                DontDestroyOnLoad="False"
+               >
+        <Transform GUID="1516990725961990790 14701553482318479361 0"
+                   Enabled="True"
+                   Position="(0.257812, -25265.6, -7467.88)"
+                   Rotation="(0, 0, 0, 1)"
+                   Scale="(1, 1, 1)"
+                  >
+        </Transform>
+        <MeshRenderer GUID="1516990725962010174 9090222827998543873 0"
+                      Enabled="True"
+                      Visible="True"
+                      Material="1516995028623761356 14346445311407292417 0"
+                      LineWidth="1"
+                      RenderWireframe="False"
+                      Mesh="1516990162192789270 3592398607304622081 6"
+                     >
+        </MeshRenderer>
+    </GameObject>
+    <GameObject GUID="1516990725962434441 14298836457924591617 0"
+                Enabled="True"
+                Visible="True"
+                Name="RightEyeBall"
+                DontDestroyOnLoad="False"
+               >
+        <Transform GUID="1516990725962465317 3092898721143193601 0"
+                   Enabled="True"
+                   Position="(0.53125, -25937, -7602.66)"
+                   Rotation="(0, 0, 0, 1)"
+                   Scale="(1, 1, 1)"
+                  >
+        </Transform>
+        <MeshRenderer GUID="1516990725962484316 13840286233072238593 0"
+                      Enabled="True"
+                      Visible="True"
+                      Material="1516990162192789270 3592398607304622081 3"
+                      LineWidth="1"
+                      RenderWireframe="False"
+                      Mesh="1516990162192789270 3592398607304622081 7"
+                     >
+        </MeshRenderer>
+    </GameObject>
+    <GameObject GUID="1516990725962910586 5176047744778764289 0"
+                Enabled="True"
+                Visible="True"
+                Name="RightEyeLittleBall"
+                DontDestroyOnLoad="False"
+               >
+        <Transform GUID="1516990725962941490 15275266555064090625 0"
+                   Enabled="True"
+                   Position="(0.539062, -25295, -7008.88)"
+                   Rotation="(0, 0, 0, 1)"
+                   Scale="(1, 1, 1)"
+                  >
+        </Transform>
+        <MeshRenderer GUID="1516990725962960270 467904938500947969 0"
+                      Enabled="True"
+                      Visible="True"
+                      Material="1516995028623761356 14346445311407292417 0"
+                      LineWidth="1"
+                      RenderWireframe="False"
+                      Mesh="1516990162192789270 3592398607304622081 8"
+                     >
+        </MeshRenderer>
+    </GameObject>
+    <GameObject GUID="1516990725963379977 9461669191942668289 0"
+                Enabled="True"
+                Visible="True"
+                Name="Teeth"
+                DontDestroyOnLoad="False"
+               >
+        <Transform GUID="1516990725963410486 4828917080482906113 0"
+                   Enabled="True"
+                   Position="(0.328125, -27149, -8644.8)"
+                   Rotation="(0, 0, 0, 1)"
+                   Scale="(1, 1, 1)"
+                  >
+        </Transform>
+        <MeshRenderer GUID="1516990725963429146 13944431974455181313 0"
+                      Enabled="True"
+                      Visible="True"
+                      Material="1516990162192789270 3592398607304622081 3"
+                      LineWidth="1"
+                      RenderWireframe="False"
+                      Mesh="1516990162192789270 3592398607304622081 9"
+                     >
+        </MeshRenderer>
+    </GameObject>
+</GameObject>
