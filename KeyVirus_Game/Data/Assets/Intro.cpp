@@ -27,16 +27,15 @@ void Intro::OnUpdate()
     Behaviour::OnUpdate();
 
     m_time += Time::GetDeltaTime();
-    double StartFadeTime = IntroTime/2;
     if (m_time >= IntroTime)
     {
         SceneManager::LoadScene( PPATH("Menu.bscene") );
     }
-    else if (m_time >= (StartFadeTime))
+    else if (m_time >= FadeStartTime)
     {
         p_imgRend->SetTint(
-          Color::White.WithAlpha(1.0 - ((m_time-StartFadeTime) /
-                                        (IntroTime-StartFadeTime))));
+          Color::White.WithAlpha(1.0 - ((m_time-FadeStartTime) /
+                                        (IntroTime-FadeStartTime))));
     }
 
 }

@@ -35,6 +35,9 @@ void Core::OnStart()
     KeyCodesToKeyName.Add(Key::Z, "Z"); KeyNameToKeyCodes.Add("Z", Key::Z); 
 
     m_virusPrefab = Resources::Load<Prefab>("Virus.bprefab");
+    Resources::SetPermanent(m_virusPrefab.Get(), true);
+
+    p_keyLocations = GameObject::Find("KeysLocation");
 }
 
 bool IsVirusColorOn(Virus *virus)
@@ -96,8 +99,6 @@ void Core::OnUpdate()
     if (timeTextGO)
     {
         UITextRenderer *timeText = timeTextGO->GetComponent<UITextRenderer>();
-        timeText->SetHorizontalAlign(HorizontalAlignment::Left);
-        timeText->SetVerticalAlign(VerticalAlignment::Top);
         m_time += Time::GetDeltaTime();
         timeText->SetContent( String::ToString(m_time, 2) );
     }
@@ -107,21 +108,28 @@ void Core::OnUpdate()
         m_appearPeriod *= 0.95;
         m_timeSinceLastAppear = 0.0;
 
-        GameObject *keysLocation = GameObject::Find("KeysLocation");
-        GameObject *keyLocation;
-        int keyLocationIndex;
-        do
+        int i = 0;
+        Array<int> freeKeyLocations;
+        for (GameObject *kl : p_keyLocations->GetChildren())
         {
-            keyLocationIndex = Random::GetRange(0, int(keysLocation->GetChildren().Size()));
-            keyLocation = keysLocation->GetChild(keyLocationIndex);
+            if (!m_keyToVirus.ContainsKey(kl->GetName()))
+            {
+                freeKeyLocations.PushBack(i);
+            }
+            ++i;
         }
-        while ( m_keyToVirus.ContainsKey(keyLocation->GetName()) );
 
-        GameObject *virus = m_virusPrefab.Get()->Instantiate();
-        Vector3 keyPosition = keyLocation->GetTransform()->GetPosition();
-        virus->GetTransform()->SetPosition( keyPosition );
-        virus->SetParent( SceneManager::GetActiveScene() );
-        m_keyToVirus.Add(keyLocation->GetName(), virus);
+        if (!freeKeyLocations.IsEmpty())
+        {
+            int idx = freeKeyLocations[Random::GetRange(0, int(freeKeyLocations.Size()))];
+            GameObject *keyLocation = p_keyLocations->GetChild(idx);
+
+            GameObject *virus = m_virusPrefab.Get()->Instantiate();
+            Vector3 keyPosition = keyLocation->GetTransform()->GetPosition();
+            virus->GetTransform()->SetPosition( keyPosition );
+            virus->SetParent( SceneManager::GetActiveScene() );
+            m_keyToVirus.Add(keyLocation->GetName(), virus);
+        }
     }
 
     for (const auto &pair : m_keyToVirus)
@@ -150,7 +158,7 @@ void Core::OnUpdate()
             bool isVirusColorOn = IsVirusColorOn(virus);
             if (isVirusColorOn)
             {
-                GameObject::Destroy(virusGO);
+                virus->DestroySelf();
                 m_keyToVirus.Remove(keyName);
             }
         }

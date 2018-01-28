@@ -15,7 +15,8 @@ public:
 
 private:
     double m_time = 0.0f;
-    double IntroTime = 5.0f;
+    double IntroTime = 10.0f;
+    double FadeStartTime = 7.0f;
     UIImageRenderer *p_imgRend = nullptr;
 };
 

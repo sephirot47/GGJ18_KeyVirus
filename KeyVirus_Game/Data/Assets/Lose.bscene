@@ -1,7 +1,7 @@
 <Scene GUID="1517101980103114236 7092346978410954753 0"
        Enabled="True"
        Visible="True"
-       Name="Menu"
+       Name="Lose"
        DontDestroyOnLoad="False"
       >
     <Transform GUID="1517101980109461406 1950170376520597505 0"
@@ -254,16 +254,6 @@
                        Enabled="True"
                       >
         </AudioListener>
-        <AudioSource GUID="1517129087961344769 12536263243506647041 0"
-                     Enabled="False"
-                     AudioClip="1517128792688318025 1760042138650804225 0"
-                     Volume="0.5"
-                     Pitch="1"
-                     Range="1"
-                     Looping="False"
-                     PlayOnStart="True"
-                    >
-        </AudioSource>
         <BehaviourContainer GUID="1517130396189064301 18294964190076469249 0"
                             Enabled="True"
                             SourceFilepath="/home/sephirot47/KeyVirus/Assets/Lose.cpp"

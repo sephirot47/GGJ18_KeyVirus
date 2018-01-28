@@ -20,6 +20,7 @@ private:
     double m_lostTime = 0.0;
     const double MaxLostTime = 4.0;
     const double LostRotTime = 2.0;
+    GameObject *p_keyLocations = nullptr;
 
     Map<Key, String> KeyCodesToKeyName;
     Map<String, Key> KeyNameToKeyCodes;

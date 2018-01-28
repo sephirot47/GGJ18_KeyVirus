@@ -1,6 +1,7 @@
 #include "Virus.h"
 
 #include "Splash.h"
+#include "Bang/AudioSource.h"
 
 void Virus::OnStart()
 {
@@ -37,22 +38,35 @@ void Virus::OnUpdate()
         GetGameObject()->GetTransform()->RotateLocal(rot);
     }
     GetGameObject()->GetTransform()->SetLocalScale(originalLocalScale * scaleFactor);
+
+    if (dying)
+    {
+        deadTime += Time::GetDeltaTime();
+        if (deadTime >= 4.0f)
+        {
+            GameObject::Destroy( GetGameObject() );
+        }
+    }
 }
 
-void Virus::OnDestroy()
+void Virus::DestroySelf()
 {
     RH<Prefab> splashPrefab = Resources::Load<Prefab>("Splash.bprefab");
+    Resources::SetPermanent(splashPrefab.Get(), true);
 
     GameObject *splashGO = splashPrefab.Get()->Instantiate();
     Splash *splash = splashGO->GetComponent<Splash>();
     if (splash)
-    { 
+    {
+        GetGameObject()->GetComponent<AudioSource>()->Play();
+        GetGameObject()->SetVisible(false);
+
         splashGO->SetVisible(false);
         splashGO->GetTransform()->SetPosition(
                     GetGameObject()->GetTransform()->GetPosition() );
         splash->color = color;
+        dying = true;
     }
 }
-
 
 BANG_BEHAVIOUR_CLASS_IMPL(Virus);

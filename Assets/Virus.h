@@ -8,9 +8,11 @@ class Virus : public Behaviour
 
 public:
     Color color;
+    bool dying = false;
     int virusType = 0;
     bool zombie = false;
     float scaleFactor = 1.0f;
+    double deadTime = 0;
     Vector3 originalPosition = Vector3::Zero;
 
     Virus() = default;
@@ -18,7 +20,8 @@ public:
 
     void OnStart() override;
     void OnUpdate() override;
-    void OnDestroy() override;
+
+    void DestroySelf();
 
 private:
     Vector3 originalLocalScale = Vector3::Zero;

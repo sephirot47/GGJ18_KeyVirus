@@ -16,6 +16,16 @@
                         SourceFilepath="/home/sephirot47/KeyVirus/Assets/Virus.cpp"
                        >
     </BehaviourContainer>
+    <AudioSource GUID="1517143571631093152 2619300030397284353 0"
+                 Enabled="True"
+                 AudioClip="1517143464564870195 5463185206372466689 0"
+                 Volume="4"
+                 Pitch="1"
+                 Range="999999"
+                 Looping="False"
+                 PlayOnStart="False"
+                >
+    </AudioSource>
     <GameObject GUID="1516990725960865262 6846583039858835457 0"
                 Enabled="True"
                 Visible="True"
