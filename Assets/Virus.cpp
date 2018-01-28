@@ -15,8 +15,13 @@ void Virus::OnStart()
     List<MeshRenderer*> mrs = GetGameObject()->GetComponentsInChildren<MeshRenderer>();
     for (MeshRenderer *mr : mrs)
     {
-        mr->GetMaterial()->SetDiffuseColor( color );
+        if (mr->GetMaterial()->GetTexture() != nullptr)
+        {
+            mr->GetMaterial()->SetDiffuseColor( color );
+        }
     }
+
+    originalLocalScale = GetGameObject()->GetTransform()->GetLocalScale();
 }
 
 void Virus::OnUpdate()
@@ -25,6 +30,7 @@ void Virus::OnUpdate()
 
     Quaternion rot = Quaternion::AngleAxis(Time::GetDeltaTime() * 3.0f, Vector3::Up);
     GetGameObject()->GetTransform()->RotateLocal(rot);
+    GetGameObject()->GetTransform()->SetLocalScale(originalLocalScale * scaleFactor);
 }
 
 void Virus::OnDestroy()

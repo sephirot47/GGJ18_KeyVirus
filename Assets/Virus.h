@@ -7,6 +7,10 @@ class Virus : public Behaviour
     COMPONENT(Virus);
 
 public:
+    Color color;
+    int virusType = 0;
+    float scaleFactor = 1.0f;
+
     Virus() = default;
     virtual ~Virus() = default;
 
@@ -15,8 +19,7 @@ public:
     void OnDestroy() override;
 
 private:
-    Color color;
-    int virusType = 0;
+    Vector3 originalLocalScale = Vector3::Zero;
 };
 
 BANG_BEHAVIOUR_CLASS(Virus);

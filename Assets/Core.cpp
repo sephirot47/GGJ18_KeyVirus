@@ -1,5 +1,7 @@
 #include "Core.h"
 
+#include "Virus.h"
+
 void Core::OnStart()
 {
     Behaviour::OnStart();
@@ -34,11 +36,28 @@ void Core::OnStart()
     m_virusPrefab = Resources::Load<Prefab>("Virus.bprefab");
 }
 
+bool IsVirusColorOn(Virus *virus)
+{
+    bool isVirusColorOn = false;
+
+    if (Input::GetKey(Key::LShift)) { isVirusColorOn = (virus->virusType == 1); }
+    else if (Input::GetKey(Key::LCtrl)) { isVirusColorOn = (virus->virusType == 2); }
+    else { isVirusColorOn = (virus->virusType == 0); }
+
+    return isVirusColorOn;
+}
+
 void Core::OnUpdate()
 {
     Behaviour::OnUpdate();
 
     m_timeSinceLastAppear += Time::GetDeltaTime();
+
+    if (m_keyToVirus.Size() == KeyNameToKeyCodes.Size())
+    {
+        Debug_Log("YOU LOST!");
+        return;
+    }
 
     if (m_timeSinceLastAppear >= m_appearPeriod)
     {
@@ -46,14 +65,29 @@ void Core::OnUpdate()
         m_timeSinceLastAppear = 0.0;
 
         GameObject *keysLocation = GameObject::Find("KeysLocation");
-        int keyLocationIndex = Random::GetRange(0, int(keysLocation->GetChildren().Size()));
-        GameObject *keyLocation = keysLocation->GetChild(keyLocationIndex);
+        GameObject *keyLocation;
+        int keyLocationIndex;
+        do
+        {
+            keyLocationIndex = Random::GetRange(0, int(keysLocation->GetChildren().Size()));
+            keyLocation = keysLocation->GetChild(keyLocationIndex);
+        }
+        while ( m_keyToVirus.ContainsKey(keyLocation->GetName()) );
 
         GameObject *virus = m_virusPrefab.Get()->Instantiate();
         Vector3 keyPosition = keyLocation->GetTransform()->GetPosition();
         virus->GetTransform()->SetPosition( keyPosition );
         virus->SetParent( SceneManager::GetActiveScene() );
         m_keyToVirus.Add(keyLocation->GetName(), virus);
+    }
+
+    for (const auto &pair : m_keyToVirus)
+    {
+        GameObject *virusGO = pair.second;
+        Virus *virus = virusGO->GetComponent<Virus>();
+
+        bool isVirusColorOn = IsVirusColorOn(virus);
+        virus->scaleFactor = isVirusColorOn ? 1.4f : 1.0f;
     }
 
     const Array<Key>& keysDown = Input::GetKeysDown();
@@ -64,9 +98,15 @@ void Core::OnUpdate()
         String keyName = KeyCodesToKeyName[k];
         if (m_keyToVirus.ContainsKey(keyName))
         {
-            GameObject *virus = m_keyToVirus.Get(keyName);
-            GameObject::Destroy(virus);
-            m_keyToVirus.Remove(keyName);
+            GameObject *virusGO = m_keyToVirus.Get(keyName);
+            Virus *virus = virusGO->GetComponent<Virus>();
+
+            bool isVirusColorOn = IsVirusColorOn(virus);
+            if (isVirusColorOn)
+            {
+                GameObject::Destroy(virusGO);
+                m_keyToVirus.Remove(keyName);
+            }
         }
     }
 }
