@@ -55,8 +55,20 @@ void Core::OnUpdate()
 
     if (m_keyToVirus.Size() == KeyNameToKeyCodes.Size())
     {
-        Debug_Log("YOU LOST!");
+        m_lostTime += Time::GetDeltaTime();
+        if (m_lostTime >= 4)
+        {
+            SceneManager::LoadScene( PPATH("Lose.bscene") );
+        }
         return;
+    }
+
+    GameObject *timeTextGO = GameObject::Find("TimeText");
+    if (timeTextGO)
+    {
+        UITextRenderer *timeText = timeTextGO->GetComponent<UITextRenderer>();
+        m_time += Time::GetDeltaTime();
+        timeText->SetContent( String::ToString(m_time, 2) );
     }
 
     if (m_timeSinceLastAppear >= m_appearPeriod)

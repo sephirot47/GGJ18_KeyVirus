@@ -15,7 +15,9 @@ public:
 
 private:
     double m_appearPeriod = 2.0;
-    double m_timeSinceLastAppear = 0.0;
+    double m_timeSinceLastAppear = m_appearPeriod;
+    double m_time = 0.0;
+    double m_lostTime = 0.0;
 
     Map<Key, String> KeyCodesToKeyName;
     Map<String, Key> KeyNameToKeyCodes;

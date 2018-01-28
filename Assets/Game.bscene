@@ -660,4 +660,64 @@
             </Transform>
         </GameObject>
     </GameObject>
+    <GameObject GUID="1517126961992549177 4943625830073892865 0"
+                Enabled="True"
+                Visible="True"
+                Name="Canvas"
+                DontDestroyOnLoad="False"
+               >
+        <RectTransform GUID="1517126961992602294 1556749585500602369 0"
+                       Enabled="True"
+                       Position="(0, 0, 0)"
+                       Rotation="(0, 0, 0, 1)"
+                       Scale="(1, 1, 1)"
+                       MarginLeftBot="(0, 0)"
+                       MarginRightTop="(0, 0)"
+                       PivotPosition="(0, 0)"
+                       AnchorMin="(-1, -1)"
+                       AnchorMax="(1, 1)"
+                      >
+        </RectTransform>
+        <UICanvas GUID="1517126961992633345 6531054538768515073 0"
+                  Enabled="True"
+                 >
+        </UICanvas>
+        <GameObject GUID="1517126961981373823 7682255307677892609 0"
+                    Enabled="True"
+                    Visible="True"
+                    Name="TimeText"
+                    DontDestroyOnLoad="False"
+                   >
+            <RectTransform GUID="1517126961981456872 1071488031321489409 0"
+                           Enabled="True"
+                           Position="(0, 0, 0)"
+                           Rotation="(0, 0, 0, 1)"
+                           Scale="(1, 1, 1)"
+                           MarginLeftBot="(0, -200)"
+                           MarginRightTop="(-200, 0)"
+                           PivotPosition="(0, 0)"
+                           AnchorMin="(-1, 1)"
+                           AnchorMax="(-1, 1)"
+                          >
+            </RectTransform>
+            <UITextRenderer GUID="1517126961981494921 5582758195404734465 0"
+                            Enabled="True"
+                            Visible="True"
+                            Material="4875661717826174977 0 0"
+                            LineWidth="1"
+                            RenderWireframe="False"
+                            Font="1511514011158768612 4115801876253900801 0"
+                            Content="00:00"
+                            TextSize="30"
+                            SpacingMultiplier="(1, 1)"
+                            TextColor="(1, 1, 1, 1)"
+                            AlphaThreshold="0.24"
+                            Kerning="False"
+                            Wrapping="False"
+                            VerticalAlign="1"
+                            HorizontalAlign="1"
+                           >
+            </UITextRenderer>
+        </GameObject>
+    </GameObject>
 </Scene>
