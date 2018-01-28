@@ -387,6 +387,20 @@
                             SourceFilepath="/home/sephirot47/KeyVirus/Assets/Menu.cpp"
                            >
         </BehaviourContainer>
+        <AudioListener GUID="1517128813224900531 8942498493004513281 0"
+                       Enabled="True"
+                      >
+        </AudioListener>
+        <AudioSource GUID="1517128816254973992 17139375270260637697 0"
+                     Enabled="True"
+                     AudioClip="1517128792688786213 3592398607304622081 0"
+                     Volume="1"
+                     Pitch="0.8"
+                     Range="0"
+                     Looping="False"
+                     PlayOnStart="True"
+                    >
+        </AudioSource>
     </GameObject>
     <GameObject GUID="1516990725960772704 5396165024857194497 0"
                 Enabled="True"

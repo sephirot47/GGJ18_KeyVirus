@@ -67,6 +67,8 @@ void Core::OnUpdate()
     if (timeTextGO)
     {
         UITextRenderer *timeText = timeTextGO->GetComponent<UITextRenderer>();
+        timeText->SetHorizontalAlign(HorizontalAlignment::Left);
+        timeText->SetVerticalAlign(VerticalAlignment::Top);
         m_time += Time::GetDeltaTime();
         timeText->SetContent( String::ToString(m_time, 2) );
     }

@@ -64,6 +64,20 @@
                            Type="0"
                           >
         </PostProcessEffect>
+        <AudioListener GUID="1517129026084435488 458938833493295105 0"
+                       Enabled="True"
+                      >
+        </AudioListener>
+        <AudioSource GUID="1517129028790281364 11363687968553304065 0"
+                     Enabled="True"
+                     AudioClip="1517128792687468694 5463185206372466689 0"
+                     Volume="1"
+                     Pitch="1"
+                     Range="inf"
+                     Looping="False"
+                     PlayOnStart="True"
+                    >
+        </AudioSource>
     </GameObject>
     <GameObject GUID="1516990760592204342 8116610779161034753 0"
                 Enabled="True"
